@@ -9,7 +9,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SFk-UF-wZb"/>
@@ -27,29 +26,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celcius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mW0-j7-rPq">
-                                <rect key="frame" x="44" y="125" width="56" height="21"/>
+                                <rect key="frame" x="31" y="124" width="56" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSh-X3-YQT">
-                                <rect key="frame" x="133" y="170" width="55" height="30"/>
+                                <rect key="frame" x="133" y="180" width="55" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Convert"/>
                                 <connections>
                                     <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fin-At-ucR"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iif-my-0mC">
-                                <rect key="frame" x="138" y="70" width="162" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXX-Xy-riO">
+                                <rect key="frame" x="133" y="120" width="167" height="30"/>
                                 <animations/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXX-Xy-riO">
-                                <rect key="frame" x="138" y="120" width="162" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iif-my-0mC">
+                                <rect key="frame" x="133" y="70" width="167" height="30"/>
                                 <animations/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -61,20 +60,20 @@
                         <constraints>
                             <constraint firstItem="wSh-X3-YQT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0gU-Yk-4OP"/>
                             <constraint firstItem="JXX-Xy-riO" firstAttribute="height" secondItem="iif-my-0mC" secondAttribute="height" id="3oE-Fo-4jF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iif-my-0mC" secondAttribute="trailing" constant="4" id="ARS-64-5cj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iif-my-0mC" secondAttribute="trailing" id="ARS-64-5cj"/>
                             <constraint firstItem="iif-my-0mC" firstAttribute="centerY" secondItem="2T6-X1-Px8" secondAttribute="centerY" id="JKH-eX-ucC"/>
                             <constraint firstItem="JXX-Xy-riO" firstAttribute="top" secondItem="iif-my-0mC" secondAttribute="bottom" constant="20" id="NNa-L7-Mei"/>
-                            <constraint firstItem="JXX-Xy-riO" firstAttribute="leading" secondItem="mW0-j7-rPq" secondAttribute="trailing" constant="38" id="ZFh-cF-xqa"/>
+                            <constraint firstItem="JXX-Xy-riO" firstAttribute="leading" secondItem="mW0-j7-rPq" secondAttribute="trailing" constant="46" id="ZFh-cF-xqa"/>
                             <constraint firstItem="iif-my-0mC" firstAttribute="trailing" secondItem="JXX-Xy-riO" secondAttribute="trailing" id="agg-Xn-gXf"/>
                             <constraint firstItem="2T6-X1-Px8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="elE-le-83q"/>
                             <constraint firstItem="mW0-j7-rPq" firstAttribute="centerY" secondItem="JXX-Xy-riO" secondAttribute="centerY" id="i6q-S4-2av"/>
                             <constraint firstItem="iif-my-0mC" firstAttribute="top" secondItem="SFk-UF-wZb" secondAttribute="bottom" constant="50" id="ia8-XA-KDs"/>
                             <constraint firstItem="2T6-X1-Px8" firstAttribute="top" secondItem="SFk-UF-wZb" secondAttribute="bottom" constant="54" id="jvf-zT-hjM"/>
-                            <constraint firstItem="iif-my-0mC" firstAttribute="leading" secondItem="2T6-X1-Px8" secondAttribute="trailing" constant="25" id="k0j-gE-nih"/>
+                            <constraint firstItem="iif-my-0mC" firstAttribute="leading" secondItem="2T6-X1-Px8" secondAttribute="trailing" constant="20" id="k0j-gE-nih"/>
                             <constraint firstItem="JXX-Xy-riO" firstAttribute="width" secondItem="iif-my-0mC" secondAttribute="width" id="u5h-9w-KEq"/>
                             <constraint firstItem="JXX-Xy-riO" firstAttribute="leading" secondItem="iif-my-0mC" secondAttribute="leading" id="w7K-iN-Dkf"/>
-                            <constraint firstItem="wSh-X3-YQT" firstAttribute="top" secondItem="JXX-Xy-riO" secondAttribute="bottom" constant="20" id="xhr-aN-HCD"/>
-                            <constraint firstItem="mW0-j7-rPq" firstAttribute="centerX" secondItem="2T6-X1-Px8" secondAttribute="centerX" id="xoY-n2-P3B"/>
+                            <constraint firstItem="wSh-X3-YQT" firstAttribute="top" secondItem="JXX-Xy-riO" secondAttribute="bottom" constant="30" id="xhr-aN-HCD"/>
+                            <constraint firstItem="mW0-j7-rPq" firstAttribute="centerX" secondItem="2T6-X1-Px8" secondAttribute="centerX" constant="-13" id="xoY-n2-P3B"/>
                         </constraints>
                     </view>
                     <connections>
@@ -82,6 +81,7 @@
                         <outlet property="tempf" destination="iif-my-0mC" id="QIg-Js-pqf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="238" y="413"/>
         </scene>

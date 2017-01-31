@@ -28,6 +28,9 @@
                                 <rect key="frame" x="279" y="81" width="43" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Touch"/>
+                                <connections>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5R-WA-33k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -39,6 +42,9 @@
                             <constraint firstItem="uei-lq-Lt6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="nwo-fS-eNf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="uei-lq-Lt6" id="Ge3-9b-6b9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
