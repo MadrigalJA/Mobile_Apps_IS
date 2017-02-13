@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assignment_3.1/ViewController.swift"
+            timestampString = "508632681.947308"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment_3_1.ViewController.init (Assignment_3_1.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Assignment_3_1.ViewController"
+                  moduleName = "Assignment_3.1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/n00877180/Desktop/Mobile_Apps_IS/Assignment_3.1/Assignment_3.1/ViewController.swift"
+                  timestampString = "508632683.280803"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assignment_3_1.ViewController.init (Assignment_3_1.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Assignment_3_1.ViewController&gt;"
+                  moduleName = "Assignment_3.1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/n00877180/Desktop/Mobile_Apps_IS/Assignment_3.1/Assignment_3.1/ViewController.swift"
+                  timestampString = "508632683.280941"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
