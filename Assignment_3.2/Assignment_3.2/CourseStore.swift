@@ -19,11 +19,11 @@ class CourseStore: NSObject
     
     
     func removeCourse(course: Course)
-    {/*
+    {
         if let index = allCourses.indexOf(course)
         {
             allCourses.removeAtIndex(index)
-        }*/
+        }
     }
     
     override init()
