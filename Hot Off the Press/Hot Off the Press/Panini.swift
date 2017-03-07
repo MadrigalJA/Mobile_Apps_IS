@@ -10,13 +10,13 @@ import UIKit
 
 struct Panini {
     var name: String
-    var ingredients: [String]
+    var ingredients: String
     var time: String
     var directions: String
     var image: String
     
     
-    init (name: String, ingredients: [String], time: String, directions: String)
+    init (name: String, ingredients: String, time: String, directions: String)
     {
         self.name = name
         self.ingredients = ingredients
@@ -28,7 +28,7 @@ struct Panini {
     init()
     {
         self.name = ""
-        self.ingredients = [String]()
+        self.ingredients = ""
         self.time = ""
         self.directions = ""
         self.image = ""

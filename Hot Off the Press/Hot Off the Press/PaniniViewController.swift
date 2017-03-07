@@ -11,6 +11,7 @@ import UIKit
 
 class PaniniViewController: UITableViewController {
     var paniniStore: PaniniStore = PaniniStore()
+    var chosenRow: Int = 0
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -27,9 +28,14 @@ class PaniniViewController: UITableViewController {
         let panini = paniniStore.allPaninis[indexPath.row] as Panini
         
         cell.textLabel?.text = panini.name
-        cell.detailTextLabel?.text = "\(panini.ingredients.count) ingredients."
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        chosenRow = indexPath.row
+        
+        performSegueWithIdentifier("DetailedView", sender: self)
     }
     
     
@@ -54,26 +60,39 @@ class PaniniViewController: UITableViewController {
             self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
     }
+    
+    @IBAction override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailedView"
+        {
+            if let NavController = segue.destinationViewController as? UINavigationController
+            {
+                if let paniniDetailsViewController = NavController.viewControllers.first as? PaniniDetailsViewController
+                {
+                    paniniDetailsViewController.panini = paniniStore.allPaninis[chosenRow]
+                }
+            }
+        }
+    }
 
     
     //unwind functions
     
-    @IBAction func cancelToPaninisViewController(segue:UIStoryboardSegue) {
+    @IBAction func cancelToPaniniViewController(segue:UIStoryboardSegue) {
     }
-/*
-    @IBAction func savepaniniDetail(segue:UIStoryboardSegue) {
-        if let paniniDetailsViewController = segue.sourceViewController as? PaniniDetailsViewController
+
+    @IBAction func savePaniniDetails(segue:UIStoryboardSegue) {
+        if let addPaniniViewController = segue.sourceViewController as? AddPaniniViewController
         {
-            if let panini = paniniDetailsViewController.panini
+            if let panini = addPaniniViewController.panini
             {
-                paninis.append(panini)
+                paniniStore.allPaninis.append(panini)
                 
-                let indexPath = NSIndexPath(forRow: paninis!.count - 1, inSection: 0)
+                let indexPath = NSIndexPath(forRow: paniniStore.allPaninis.count - 1, inSection: 0)
                 tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             }
         }
     }
-*/
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
