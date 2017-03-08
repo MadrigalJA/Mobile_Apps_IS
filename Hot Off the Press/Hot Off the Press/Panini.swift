@@ -16,13 +16,13 @@ struct Panini {
     var image: String
     
     
-    init (name: String, ingredients: String, time: String, directions: String)
+    init (name: String, ingredients: String, time: String, directions: String, image: String)
     {
         self.name = name
         self.ingredients = ingredients
         self.time = time
         self.directions = directions
-        self.image = ""
+        self.image = image
     }
     
     init()

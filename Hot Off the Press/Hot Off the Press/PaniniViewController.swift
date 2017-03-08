@@ -64,12 +64,9 @@ class PaniniViewController: UITableViewController {
     @IBAction override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "DetailedView"
         {
-            if let NavController = segue.destinationViewController as? UINavigationController
+            if let paniniDetailsViewController = segue.destinationViewController as? PaniniDetailsViewController
             {
-                if let paniniDetailsViewController = NavController.viewControllers.first as? PaniniDetailsViewController
-                {
-                    paniniDetailsViewController.panini = paniniStore.allPaninis[chosenRow]
-                }
+                paniniDetailsViewController.panini = paniniStore.allPaninis[chosenRow]
             }
         }
     }

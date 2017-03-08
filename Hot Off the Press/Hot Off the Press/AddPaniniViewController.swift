@@ -29,7 +29,7 @@ class AddPaniniViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SavePaniniDetail"
         {
-            panini = Panini.init(name: nameText.text, ingredients: ingredientsText.text, time: timeText.text, directions: directionsText.text)
+            panini = Panini.init(name: nameText.text, ingredients: ingredientsText.text, time: timeText.text, directions: directionsText.text, image: "")
         }
     }
     

@@ -26,6 +26,27 @@ class PaniniDetailsViewController: UIViewController {
         print("deinit PaniniDetailsViewController")
     }
     
+    @IBAction override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ImageNav"
+        {
+            if let imageViewController = segue.destinationViewController as? ImageViewController
+            {
+                let img = UIImage(named: panini!.image)
+                imageViewController.img = img
+            }
+        }
+    }
+    
+    @IBAction func showImg(sender: AnyObject)
+    {
+        performSegueWithIdentifier("ImageNav", sender: self)
+    }
+    
+    //unwind functions
+    
+    @IBAction func returnFromImage(segue:UIStoryboardSegue) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

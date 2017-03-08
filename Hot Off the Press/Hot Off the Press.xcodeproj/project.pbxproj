@@ -14,6 +14,7 @@
 		6517DFD81E6761C100357663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6517DFD61E6761C100357663 /* LaunchScreen.storyboard */; };
 		6517DFE01E67649900357663 /* Panini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517DFDF1E67649900357663 /* Panini.swift */; };
 		6517DFE21E67727400357663 /* PaniniStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517DFE11E67727400357663 /* PaniniStore.swift */; };
+		6549F8B71E706F1B00683998 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6549F8B61E706F1B00683998 /* ImageViewController.swift */; };
 		655304B61E6E212C005CB5E2 /* AddPaniniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655304B51E6E212C005CB5E2 /* AddPaniniViewController.swift */; };
 		655304B81E6E2930005CB5E2 /* PaniniDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655304B71E6E2930005CB5E2 /* PaniniDetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		6517DFD91E6761C100357663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6517DFDF1E67649900357663 /* Panini.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Panini.swift; sourceTree = "<group>"; };
 		6517DFE11E67727400357663 /* PaniniStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaniniStore.swift; sourceTree = "<group>"; };
+		6549F8B61E706F1B00683998 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		655304B51E6E212C005CB5E2 /* AddPaniniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaniniViewController.swift; sourceTree = "<group>"; };
 		655304B71E6E2930005CB5E2 /* PaniniDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaniniDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,16 +64,17 @@
 		6517DFCC1E6761C100357663 /* Hot Off the Press */ = {
 			isa = PBXGroup;
 			children = (
-				6517DFCD1E6761C100357663 /* AppDelegate.swift */,
+				655304B51E6E212C005CB5E2 /* AddPaniniViewController.swift */,
+				6549F8B61E706F1B00683998 /* ImageViewController.swift */,
 				655304B71E6E2930005CB5E2 /* PaniniDetailsViewController.swift */,
-				6517DFE11E67727400357663 /* PaniniStore.swift */,
 				6517DFCF1E6761C100357663 /* PaniniViewController.swift */,
-				6517DFD11E6761C100357663 /* Main.storyboard */,
 				6517DFD41E6761C100357663 /* Assets.xcassets */,
+				6517DFCD1E6761C100357663 /* AppDelegate.swift */,
+				6517DFDF1E67649900357663 /* Panini.swift */,
+				6517DFE11E67727400357663 /* PaniniStore.swift */,
+				6517DFD11E6761C100357663 /* Main.storyboard */,
 				6517DFD61E6761C100357663 /* LaunchScreen.storyboard */,
 				6517DFD91E6761C100357663 /* Info.plist */,
-				6517DFDF1E67649900357663 /* Panini.swift */,
-				655304B51E6E212C005CB5E2 /* AddPaniniViewController.swift */,
 			);
 			path = "Hot Off the Press";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				6517DFE21E67727400357663 /* PaniniStore.swift in Sources */,
 				6517DFD01E6761C100357663 /* PaniniViewController.swift in Sources */,
 				655304B81E6E2930005CB5E2 /* PaniniDetailsViewController.swift in Sources */,
+				6549F8B71E706F1B00683998 /* ImageViewController.swift in Sources */,
 				6517DFE01E67649900357663 /* Panini.swift in Sources */,
 				6517DFCE1E6761C100357663 /* AppDelegate.swift in Sources */,
 				655304B61E6E212C005CB5E2 /* AddPaniniViewController.swift in Sources */,
